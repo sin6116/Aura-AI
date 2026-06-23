@@ -1,7 +1,9 @@
 # 🌌 Aura AI
 **Aura AI** is a modern, sleek, and fully static client-side AI chat interface designed to deliver a premium user experience with a dark liquid-glass theme (*glassmorphism*). 
 Running entirely in the browser without any heavy server-side frameworks, it integrates advanced document parsing, image OCR, and a rich **Artifacts** panel for previewing code, diagrams, and interactive web pages.
----
+## 🌐 Live Demo
+You can try the live version of Aura AI directly in your browser:
+👉 **[Aura AI Live Demo](https://sin6116.github.io/Aura-AI/)**
 ## ✨ Key Features
 * **💬 Modern Chat UI**: Sleek, animated, and minimalist chat window with an interactive conversation history sidebar.
 * **📦 Artifacts System** (similar to Claude.ai):

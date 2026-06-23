@@ -1,58 +1,42 @@
 # 🌌 Aura AI
-
-**Aura AI** est une interface utilisateur de chat IA moderne, élégante et entièrement statique, conçue pour offrir une expérience utilisateur haut de gamme (inspirée du style *glassmorphism* et du thème sombre). 
-
-Ce projet s'exécute entièrement côté client (dans votre navigateur) et intègre des fonctionnalités avancées de gestion de documents, d'OCR et de visualisation de code via un panneau d'**Artefacts**.
-
+**Aura AI** is a modern, sleek, and fully static client-side AI chat interface designed to deliver a premium user experience with a dark liquid-glass theme (*glassmorphism*). 
+Running entirely in the browser without any heavy server-side frameworks, it integrates advanced document parsing, image OCR, and a rich **Artifacts** panel for previewing code, diagrams, and interactive web pages.
 ---
-
-## ✨ Fonctionnalités clés
-
-* **💬 Chat Interactif Moderne** : Une interface de discussion fluide, épurée et animée avec gestion de l'historique dans la barre latérale.
-* **📦 Système d'Artefacts** (similaire à Claude.ai) :
-  * Affichage en temps réel du code généré, des pages web interactives (HTML/JS/CSS dans une iframe), des images SVG et des tableaux de données.
-  * Visualisation dynamique de schémas et graphiques grâce au moteur **Mermaid.js**.
-  * Possibilité de copier le code ou de télécharger directement l'artefact généré.
-* **📎 Analyse de Documents & Fichiers** :
-  * **PDF** : Lecture et extraction de texte directement dans le navigateur (via `pdf.js`).
-  * **Word (.docx)** : Conversion et extraction de documents Word (via `mammoth.js`).
-  * **Excel (.xlsx)** : Lecture et affichage de feuilles de calcul (via `SheetJS/xlsx`).
-  * **Images & OCR** : Extraction automatique de texte à partir de captures d'écran ou d'images (via `tesseract.js`).
-* **⚙️ Multi-fournisseurs d'API** : Configuration directe de vos clés d'API et modèles préférés (avec stockage sécurisé dans le `localStorage` du navigateur).
-* **🔌 Simulation Hors-ligne** : Mode de repli hors-ligne en cas de problème de connexion pour tester l'interface de manière autonome.
-
+## ✨ Key Features
+* **💬 Modern Chat UI**: Sleek, animated, and minimalist chat window with an interactive conversation history sidebar.
+* **📦 Artifacts System** (similar to Claude.ai):
+  * Live rendering of AI-generated content (interactive HTML/CSS/JS in iframes, SVG drawings, markdown previews).
+  * Dynamic rendering of schemas and charts using **Mermaid.js**.
+  * Quick-action buttons to copy code snippets or download generated files.
+* **📎 In-Browser File & Document Parsing**:
+  * **PDFs**: In-browser text extraction (powered by `pdf.js`).
+  * **Word Documents (.docx)**: Direct conversion and text extraction (powered by `mammoth.js`).
+  * **Excel Sheets (.xlsx)**: Spreadsheet reading and rendering (powered by `SheetJS/xlsx`).
+  * **Images & OCR**: Automatic text extraction from images and screenshots (powered by `tesseract.js`).
+* **⚙️ Multi-Provider API Configuration**: Setup your custom API keys, endpoints, and model preferences directly in the settings modal (stored securely in browser `localStorage`).
+* **🔌 Offline Fallback Simulation**: Offline sandbox mode that kicks in to mock AI responses for testing and UI evaluation when API keys are not provided.
 ---
-
-## 🛠️ Technologies utilisées
-
-Pour des performances maximales et une légèreté absolue, ce projet a été construit sans framework lourd :
-* **HTML5** (Structure sémantique)
-* **Vanilla CSS** (Thème sombre sur mesure, variables CSS avancées, flous de verre liquide et animations fluides)
-* **Vanilla JavaScript** (Logique applicative modulaire et réactive)
-* **Bibliothèques externes (chargées via CDN)** :
-  * [Marked.js](https://github.com/markedjs/marked) : Pour le rendu du Markdown.
-  * [PDF.js](https://mozilla.github.io/pdf.js/) : Pour la lecture des fichiers PDF.
-  * [Mammoth.browser.js](https://github.com/mvoloskov/mammoth.js) : Pour l'import de documents Word.
-  * [SheetJS (XLSX)](https://sheetjs.com/) : Pour l'import de fichiers Excel.
-  * [Tesseract.js](https://tesseract.projectnaptha.com/) : Pour l'OCR (reconnaissance optique de caractères sur les images).
-  * [Mermaid.js](https://mermaid.js.org/) : Pour la génération de diagrammes.
-
+## 🛠️ Built With
+This project is built using vanilla technologies to guarantee fast loading speeds and zero build-step overhead:
+* **HTML5** (Semantic structure)
+* **Vanilla CSS** (Custom dark theme, CSS variables, glassmorphism blur effects, and smooth transitions)
+* **Vanilla JavaScript** (Modular and reactive event-driven script)
+* **Third-Party Libraries (Loaded via CDN)**:
+  * [Marked.js](https://github.com/markedjs/marked) - Markdown rendering.
+  * [PDF.js](https://mozilla.github.io/pdf.js/) - PDF document parsing.
+  * [Mammoth.js](https://github.com/mvoloskov/mammoth.js) - Word document conversion.
+  * [SheetJS (XLSX)](https://sheetjs.com/) - Spreadsheet handling.
+  * [Tesseract.js](https://tesseract.projectnaptha.com/) - OCR (Optical Character Recognition).
+  * [Mermaid.js](https://mermaid.js.org/) - Diagram and flowchart rendering.
 ---
-
-## 🚀 Démarrage rapide
-
-Comme il s'agit d'une **page web statique**, aucune installation de serveur ou de dépendances n'est requise !
-
-1. Téléchargez ou clonez ce dépôt :
+## 🚀 Quick Start
+Since this is a **static web application**, there are no installations, node packages, or build steps required!
+1. Clone or download this repository:
    ```bash
-   git clone https://github.com/VOTRE_NOM_D_UTILISATEUR/aura-ai.git
+   git clone https://github.com/YOUR_USERNAME/aura-ai.git
    ```
-2. Ouvrez simplement le fichier `index.html` dans votre navigateur Web préféré (Double-clic sur le fichier).
-
-*💡 **Astuce** : Pour une meilleure expérience de développement (rechargement automatique), vous pouvez utiliser l'extension **Live Server** sur VS Code.*
-
+2. Double-click the `index.html` file to open it directly in your web browser.
+*💡 **Tip**: For the best development experience with auto-reload, you can use the **Live Server** extension in VS Code.*
 ---
-
-## 📄 Licence
-
-Ce projet est sous licence **MIT**. Vous êtes libre de l'utiliser, de le modifier et de le distribuer à condition de conserver la mention de copyright originale et le lien vers ce projet.
+## 📄 License
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute it, provided you include the original copyright notice and credit this project.
